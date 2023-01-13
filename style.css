@@ -1,0 +1,265 @@
+/* Color
+#8C00FF = purple
+#FF8C00 = orange
+#00FF8C = green shade
+#FAF9F6 = off white
+#6E3500 = brown
+#ff0800 = red
+
+#19142a = brand
+#da243e = button background
+#fefefd = main texts
+#52182e = welcome background
+#d12332 = social icons
+#2a2344 = light brand
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #19142a;
+}
+
+.sectionDivide {
+    margin: auto;
+    max-width: 1200px;
+    padding: 15px;
+}
+
+.section-title {
+    color: #fefefd;
+    font-size: 30px;
+    font-weight: bolder;
+    float: left;
+}
+
+/* Follow Me on Position Fixed*/
+
+.follow__me-fixed {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    position: fixed;
+    float: right;
+    top: 120px;
+    right: 20px;
+}
+
+.follow__me {
+    writing-mode: vertical-rl;
+    color: #d12332;
+    margin-bottom: 20px;
+}
+
+.follow__me-divider {
+    display: inline-block;
+    border-left: 1px solid #d12332;
+    height: 130px;
+}
+
+.follow__me-social {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.follow__me-social li {
+    padding: 20px 0 0 0;
+    list-style-type: none;
+}
+
+.follow__me-social a {
+    color: #d12332;
+    text-decoration: none;
+}
+
+
+/*Nav-Head*/
+
+.navhead {
+    height: 100vh;
+}
+
+/*Navbar*/
+
+.section__navbar {
+    height: 10%;
+}
+
+.navbar__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+
+}
+
+.navbar__content-logo img {
+    width: 100%;
+    height: 50px;
+}
+
+.navbar__content-menus {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+}
+
+.fa-house {
+    width: 15px;
+    height: 15px;
+    color: #fefefd;
+}
+
+.menus-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menus-list li {
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.menus-list a {
+    text-decoration: none;
+    color: #fefefd;
+}
+
+.navbar__content-chatButton {
+    display: inline-block;
+    margin: auto;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-left: 50px;
+    border: solid 2px #ff0800;
+}
+
+.navbar__content-chatButton a {
+    text-decoration: none;
+    color: #fefefd;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+
+/* Header */
+
+.section__header {}
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+}
+
+.header__content-text {
+    width: 50%;
+}
+
+.header-welcome {
+    display: inline-block;
+    background-color: #52182e;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.header-welcome h1 {
+    color: #fff;
+    margin: 8px 20px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.header__content-text h2 {
+    color: #fefefd;
+    font-weight: 800;
+}
+
+.header__content-text h5 {
+    color: #fefefd;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.header__content-text p {
+    margin-top: 30px;
+    color: #fefefd;
+    justify-content: inherit;
+    text-align: justify;
+}
+
+.header__content-image {}
+
+.header__content-image img {
+    width: 60%;
+    margin: auto;
+    display: block;
+
+}
+
+/* Portfolio */
+
+.section__portfolio {
+    background-color: #2a2344;
+    padding: 40px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+
+.portfolio-contents {
+    position: relative;
+    display: flex;
+    place-items: center;
+    text-align: center;
+    border-radius: 0 20px 0 0;
+    border: 1px dashed #d12332;
+    height: 120px;
+}
+
+.content-icons {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    display: flex;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #d12332;
+    border-radius: 2px;
+}
+
+.content-icons i {
+    color: #fefefd;
+    margin: auto;
+}
+
+.text-contents {
+    color: #fefefd;
+    margin: auto;
+}
+
+.text-contents h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.text-contents h3 {
+    font-size: 20px;
+    font-weight: 200;
+}
